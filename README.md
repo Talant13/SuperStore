@@ -33,7 +33,7 @@ FROM SuperStoreDataset.store_data
 group by state
 order by ROUND(SUM(Profit), 2) desc
 
-![KPI_overview_1]("./Visuals/KPI_Overview_1.png")
+![KPI_overview_1]("https://github.com/Talant13/SuperStore/blob/50689c99260b7db229c5ac63f44291504c6c53ae/Visuals/KPI_Overview_1.png")
 
 - **Total Customers**: Number of unique customers
 - **Total Transactions**: Total sales entries
