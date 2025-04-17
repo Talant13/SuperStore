@@ -17,3 +17,15 @@ This project explores the "Sample Superstore" dataset to uncover trends in sales
 - Data cleaning and exploratory data analysis (EDA)
 
 The insights from this analysis can support strategic planning in retail, especially for optimizing logistics and maximizing profit margins.
+
+## 📊 Executive Summary - Business KPIs
+
+This query calculates key metrics from the Sample Superstore dataset to provide a quick overview of business performance:
+
+- **Total Customers**: Number of unique customers
+- **Total Transactions**: Total sales entries
+- **Total Sales**: Total revenue across all sales
+- **Total Profit**: Combined profit
+- **Average Profit per Transaction**: Average profitability per sale
+
+🛠 Tools: SQL (Google BigQuery)
