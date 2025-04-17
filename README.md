@@ -14,6 +14,7 @@ This project explores the "Sample Superstore" dataset to uncover trends in sales
 - Python
 - Jupyter Notebook
 - PowerBI
+- BigQuery
 - Data cleaning and exploratory data analysis (EDA)
 
 The insights from this analysis can support strategic planning in retail, especially for optimizing logistics and maximizing profit margins.
@@ -21,6 +22,18 @@ The insights from this analysis can support strategic planning in retail, especi
 ## 📊 Executive Summary - Business KPIs
 
 This query calculates key metrics from the Sample Superstore dataset to provide a quick overview of business performance:
+
+SELECT
+State as state,
+COUNT(\*) AS total_transactions,
+ROUND(SUM(Sales), 2) AS total_sales,
+ROUND(SUM(Profit), 2) AS total_profit,
+ROUND(AVG(Profit), 2) AS avg_profit_per_order
+FROM SuperStoreDataset.store_data
+group by state
+order by ROUND(SUM(Profit), 2) desc
+
+![KPI_overview_1]("./Visuals/KPI_overview_1)
 
 - **Total Customers**: Number of unique customers
 - **Total Transactions**: Total sales entries
