@@ -33,7 +33,7 @@ FROM SuperStoreDataset.store_data
 group by state
 order by ROUND(SUM(Profit), 2) desc
 
-![KPI_overview_1]("./Visuals/KPI_Overview_1.png)
+![KPI_overview_1]("https://github.com/Talant13/SuperStore/blob/master/Visuals/KPI_Overview_1.png)
 
 Visuals/KPI_Overview_1.png
 
