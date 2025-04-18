@@ -161,3 +161,42 @@ ORDER BY Total_Profit DESC;
 #### ✅ Recommended Actions:
 
 - 🔒 **Limit deep discounts** — only use >20% in rare, strategic cases.
+
+---
+
+---
+
+### 🧑‍💼 Sales & Profit by Customer Segment
+
+| Segment     | 💵 Total Sales | 📈 Total Profit |
+| ----------- | -------------- | --------------- |
+| Consumer    | \$1,161,401.34 | \$134,119.21    |
+| Corporate   | \$706,146.37   | \$91,979.13     |
+| Home Office | \$429,653.15   | \$60,298.68     |
+
+<pre>
+```SELECT 
+  Segment,
+  ROUND(SUM(Sales), 2) AS Sales,
+  ROUND(SUM(Profit), 2) AS Profit
+FROM SuperStoreDataset.store_data
+GROUP BY Segment
+ORDER BY Profit DESC;
+```
+</pre>
+
+---
+
+#### 🔍 Key Insights:
+
+- 🥇 **Consumer segment** generates the highest revenue and profit, making it the **core driver of the business**.
+- 🏢 **Corporate clients** are the second most valuable group, with **strong profitability relative to their sales volume**.
+- 🏠 **Home Office** is the smallest segment, yet still contributes meaningfully to total profit.
+
+---
+
+#### ✅ Recommended Strategy:
+
+- 🔁 Continue to **nurture and expand the Consumer base**, especially in profitable product categories.
+- 🎯 **Upsell to Corporate clients**, who show high profit-to-sales efficiency.
+- 📢 Develop marketing strategies to grow the **Home Office segment** — potential for scaling with lower effort.
