@@ -42,4 +42,45 @@ SELECT State as state,
 - **Total Profit**: Combined profit
 - **Average Profit per Transaction**: Average profitability per sale
 
-🛠 Tools: SQL (Google BigQuery)
+This executive snapshot highlights key KPIs derived from SQL analysis of the Sample Superstore dataset. It reveals patterns in sales, profitability, discount strategy, and customer segments to support smarter business decisions.
+
+<pre>```
+SELECT
+  ROUND(SUM(Sales),) AS Total_Sales,
+  ROUND(SUM(Profit),) AS Total_Profit,
+  ROUND(AVG(Discount) * 100, 2) AS Avg_Discount_Percent
+FROM SuperStoreDataset.store_data
+```</pre>
+
+---
+
+### 🔑 Overall Performance KPIs
+
+| Metric              | Value          |
+| ------------------- | -------------- |
+| 💵 **Total Sales**  | \$2,297,200.86 |
+| 📈 **Total Profit** | \$286,397.02   |
+| 🏷️ **Avg Discount** | 15.62%         |
+| 🧾 **Orders**       | ~10,000        |
+
+> 💡 **Profit Margin:** ~12.5% — healthy, but discounting is significantly eroding profitability.
+
+---
+
+### 🧠 Key Insights
+
+- **High Discounts = Low Profit**: The average discount is **15.62%**, but profits are not scaling with sales.
+- **Sales are strong**, but much of the margin is lost on overly discounted orders.
+- Certain **product categories** (like _Tables_) are consistently unprofitable.
+- The **Corporate** and **Home Office** segments show better profit per order than Consumer.
+
+---
+
+### ✅ Recommended Actions
+
+- 🧮 Recalibrate discount strategy — aim for **≤10%** average.
+- 🚫 Reduce or replace products with **chronic negative profit**.
+- 📦 Prioritize **Technology** and **Office Supplies** in growth strategies.
+- 🧑‍💼 Expand targeting toward **Corporate** and **Home Office** segments.
+
+---
