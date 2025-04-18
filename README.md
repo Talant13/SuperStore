@@ -4,10 +4,13 @@ This project explores the "Sample Superstore" dataset to uncover trends in sales
 
 ### 🔍 Key Questions Explored:
 
-- Which product categories and sub-categories are the most/least profitable?
-- How do sales and profits vary by region and state?
-- Are there shipping modes or segments associated with high returns or losses?
-- What strategies could improve overall profitability?
+- 💰 Which customer segments generate the most revenue and profit?
+- 🌍 Which regions are performing the best and worst?
+- 📉 How do different discount levels impact profitability?
+- 🧾 What is the overall performance of the business?
+- 📦 Which pricing/discount strategies are most profitable?
+- 🧑‍💼 How does customer type affect profitability strategy?
+- 📊 Which parts of the business need attention to improve profit margins?
 
 ### 🧰 Tools & Technologies:
 
