@@ -122,3 +122,42 @@ ORDER BY Profit DESC;```
 - **Central** has the **lowest profit** despite moderate sales, indicating room for margin improvement.
 
 > ✅ **Actionable Step**: Conduct a cost analysis and discount review for South and Central regions to boost profitability.
+
+---
+
+---
+
+### 🏷️ Discount Impact on Profitability
+
+<pre>```sql
+SELECT 
+  CASE 
+    WHEN Discount = 0 THEN 'No Discount'
+    WHEN Discount BETWEEN 0.01 AND 0.2 THEN 'Low (0-20%)'
+    WHEN Discount > 0.2 THEN 'High (>20%)'
+  END AS Discount_Level,
+  ROUND(SUM(Profit), 2) AS Total_Profit
+FROM SuperStoreDataset.store_data
+GROUP BY Discount_Level
+ORDER BY Total_Profit DESC;
+```</pre>
+
+| Discount Level | 📈 Total Profit   |
+| -------------- | ----------------- |
+| No Discount    | \$320,987.60      |
+| Low (0–20%)    | \$100,785.47      |
+| High (>20%)    | **–\$135,376.06** |
+
+---
+
+#### 🔎 Key Insights:
+
+- ✅ **No Discount** sales deliver the **highest profit**, making up the majority of overall profitability.
+- 🟡 **Low discounts (0–20%)** remain profitable but are significantly less efficient than no-discount sales.
+- ❌ **High discounts (>20%) lead to losses** — over **\$135K in negative profit**, a major red flag for margin sustainability.
+
+---
+
+#### ✅ Recommended Actions:
+
+- 🔒 **Limit deep discounts** — only use >20% in rare, strategic cases.
