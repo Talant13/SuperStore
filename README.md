@@ -42,6 +42,12 @@ SELECT State as state,
 - **Total Profit**: Combined profit
 - **Average Profit per Transaction**: Average profitability per sale
 
+---
+
+---
+
+## 🔑 Overall Performance KPIs
+
 This executive snapshot highlights key KPIs derived from SQL analysis of the Sample Superstore dataset. It reveals patterns in sales, profitability, discount strategy, and customer segments to support smarter business decisions.
 
 <pre>```
@@ -84,3 +90,35 @@ FROM SuperStoreDataset.store_data
 - 🧑‍💼 Expand targeting toward **Corporate** and **Home Office** segments.
 
 ---
+
+---
+
+### 🌍 Regional Performance – Sales & Profit by Region
+
+<pre>
+```SELECT 
+  Region,
+  ROUND(SUM(Sales), 2) AS Sales,
+  ROUND(SUM(Profit), 2) AS Profit
+FROM SuperStoreDataset.store_data
+GROUP BY Region
+ORDER BY Profit DESC;```
+</pre>
+
+| Region  | 💵 Total Sales | 📈 Total Profit |
+| ------- | -------------- | --------------- |
+| West    | \$725,457.82   | \$108,418.45    |
+| East    | \$678,781.24   | \$91,522.78     |
+| South   | \$391,721.90   | \$46,749.43     |
+| Central | \$501,239.89   | \$39,706.36     |
+
+---
+
+#### 🔎 Key Insights:
+
+- **West** is the strongest region, leading in both sales and profit.
+- **East** follows closely behind, showing balanced revenue and profitability.
+- **South** has healthy revenue but a significantly lower profit margin — **possible cost or discount inefficiency**.
+- **Central** has the **lowest profit** despite moderate sales, indicating room for margin improvement.
+
+> ✅ **Actionable Step**: Conduct a cost analysis and discount review for South and Central regions to boost profitability.
