@@ -2,6 +2,15 @@
 
 This project explores the "Sample Superstore" dataset to uncover trends in sales, profit, shipping, and regional performance across the United States. The goal is to identify business insights that can drive better decision-making in areas like product strategy, regional investment, and customer targeting.
 
+---
+
+-- Readme File contains SQL based analysis
+-- SuperStoreAnalysis.ipynb file contains Python based analysis
+
+---
+
+# SQL
+
 ### 🔍 Key Questions Explored:
 
 - 💰 Which customer segments generate the most revenue and profit?
