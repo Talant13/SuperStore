@@ -4,8 +4,8 @@ This project explores the "Sample Superstore" dataset to uncover trends in sales
 
 ---
 
--- Readme File contains SQL based analysis
--- SuperStoreAnalysis.ipynb file contains Python based analysis
+- Readme File contains SQL based analysis
+- SuperStoreAnalysis.ipynb file contains Python based analysis
 
 ---
 
