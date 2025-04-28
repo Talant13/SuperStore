@@ -212,4 +212,3 @@ ORDER BY Profit DESC;
 - 🔁 Continue to **nurture and expand the Consumer base**, especially in profitable product categories.
 - 🎯 **Upsell to Corporate clients**, who show high profit-to-sales efficiency.
 - 📢 Develop marketing strategies to grow the **Home Office segment** — potential for scaling with lower effort.
--
