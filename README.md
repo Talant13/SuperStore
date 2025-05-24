@@ -213,4 +213,4 @@ ORDER BY Profit DESC;
 - 🎯 **Upsell to Corporate clients**, who show high profit-to-sales efficiency.
 - 📢 Develop marketing strategies to grow the **Home Office segment** — potential for scaling with lower effort.
 
----
+---s
